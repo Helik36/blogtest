@@ -1,12 +1,21 @@
 <!-- <h1>Заголовок</h1> — главный заголовок страницы;
+
 <h2>Подзаголовок</h2> — для заголовков второго уровня;
+
 <h3>Заголовок третьего уровня</h3> … и так далее, вплоть до <h6>;
+
 <p>A paragraph of text</p>
+
 <em>текст</em> подчёркивает твой текст;
+
 <strong>текст</strong> — жирный шрифт;
+
 <br /> — переход на следующую строку (внутрь br тега нельзя ничего поместить);
+
 <a href="https://djangogirls.org">link</a> создаёт ссылку;
+
 <ul><li>первый элемент</li><li>второй элемент</li></ul> создаёт список, такой же как этот!
+
 <div></div> определяет раздел страницы. -->
 
 
@@ -19,16 +28,16 @@
             <h1><a href="/">Django Helik36 Blog</a></h1>
         </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+        {{ posts }}
+            <p>published: 16.03.2020, 14:0</p>
             <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+            <p>В общем, всем привет, это тест по Django, если вы как то суда попали, то вы наверное молодец! Вот только как вы это сделали? </p>
+        {{ posts }}
 
-        <div>
+        {{ posts }}
             <p>published: 14.06.2014, 12:14</p>
             <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+            <p>IT"s A TEST! Or TRAP?</p>
+        {{ posts }}
     </body>
 </html>
