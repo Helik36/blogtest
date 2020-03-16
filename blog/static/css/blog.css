@@ -4,12 +4,12 @@ h1 a {
     color: #FCA205;	/* цвет */
     font-family: 'Lobster';  	/* шрифт */
 }
-
+ 
 /*отступ*/
 body {
     padding-left: 15px;
 }
-
+ 
 .page-header {
     background-color: #ff9400;
     margin-top: 0;
