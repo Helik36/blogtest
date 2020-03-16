@@ -28,16 +28,13 @@
             <h1><a href="/">Django Helik36 Blog</a></h1>
         </div>
 
-        {{ posts }}
-            <p>published: 16.03.2020, 14:0</p>
-            <h2><a href="">My first post</a></h2>
-            <p>В общем, всем привет, это тест по Django, если вы как то суда попали, то вы наверное молодец! Вот только как вы это сделали? </p>
-        {{ posts }}
-
-        {{ posts }}
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>IT"s A TEST! Or TRAP?</p>
-        {{ posts }}
+        {% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+        
     </body>
 </html>
